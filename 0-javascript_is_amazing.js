@@ -1,1 +1,2 @@
- const myVAR = "Javascript is amazing";\nconsole.log(myVar);
+const myVar = "JavaScript is amazing";
+console.log(myVar);
