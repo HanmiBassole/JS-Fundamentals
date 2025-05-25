@@ -1,10 +1,16 @@
 #!/usr/bin/node
 
-function add(a, b) {
-  return a + b;
+function factorial(n) {
+  if (n <= 1) {
+    return 1;
+  }
+  return n * factorial(n - 1);
 }
 
-const a = Number(process.argv[2]);
-const b = Number(process.argv[3]);
+const input = parseInt(process.argv[2]);
 
-console.log(add(a, b));
+if (isNaN(input)) {
+  console.log(1);
+} else {
+  console.log(factorial(input));
+}
